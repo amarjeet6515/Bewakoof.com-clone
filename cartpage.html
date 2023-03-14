@@ -1,219 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
     <link rel="stylesheet" href="cartpage.css">
-
 </head>
-<!--    body-->
-
 <body>
-    <div class="overlay">
-        <div class="overlay-content">
+    <body>
+
+
+        <div class="overlay">
+          <div class="overlay-content">
             <p>Have a Coupon / Gift Card?</p>
             <input type="text" id="coupoun-text" placeholder="Enter code">
             <button id="coupoun-submit">APPLY</button>
             <span class="coupoun-close">&times;</span>
+          </div>
         </div>
-    </div>
-
-    <!-- adress page start -->
-
-    <!-- <form id="btn-address-save"> -->
-    <div class="total-adress-page" class="overlay">
-
-        <div class="adress-overlay">
-
-
+      
+        <!-- adress page start -->
+      
+        <!-- <form id="btn-address-save"> -->
+        <div class="total-adress-page" class="overlay">
+      
+          <div class="adress-overlay">
+      
+      
             <h2>Add New Address</h2>
             <input type="text" placeholder="Fullname" class="address-fullname"></input>
             <input type="text" placeholder="Mobile number" class="address-mobilenumber"></input>
             <input type="pincode" placeholder="Pincode" class="address-pincode"></input>
             <div id="city-district">
-                <input type="text" placeholder="City/District" class="address-city-district"></input>
-                <input type="text" placeholder="State" class="address-state"></input>
+              <input type="text" placeholder="City/District" class="address-city-district"></input>
+              <input type="text" placeholder="State" class="address-state"></input>
             </div>
             <input type="text" placeholder="Flatno/Building,Street name" class="address-flatno"></input>
             <input type="text" placeholder="Area/Locality" class="address-area"></input>
             <input type="text" placeholder="Landmark(optional)" class="address-landmark"></input>
             <div class="Save-address-flex">
-                <p>Save Address As</p>
-                <button onclick="home_button()">Home</button>
-                <button onclick="office_button()">Office</button>
-                <button onclick="other_button()">Other</button>
+              <p>Save Address As</p>
+              <button onclick="home_button()">Home</button>
+              <button onclick="office_button()">Office</button>
+              <button onclick="other_button()">Other</button>
             </div>
             <div class="saveaddress-cancel">
-                <button type="submit" id="btn-address-save">SAVE ADDRESS</button>
-                <button>CANCEL</button>
+              <button type="submit" id="btn-address-save">SAVE ADDRESS</button>
+              <button>CANCEL</button>
             </div>
             <span id="adress-close">&times</span>
-
+      
+          </div>
+      
+      
         </div>
-
-
-    </div>
-    <!-- </form> -->
-    <div id="cartpage-total-div">
-
-        <div id="cart-head-const">
+        <!-- </form> -->
+      
+      
+      
+        <div id="cartpage-total-div">
+      
+          <div id="cart-head-const">
             <a href="./index.html"><img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg"
-                    height="25px"></a>
+                height="25px"></a>
             <span>Signed as:<p id="logedin-email"></p></span>
-        </div>
-
-        <p id="total-items-cart">My Bag 0 item(s)</p>
-        <div id="cart-append-change">
+          </div>
+      
+          <p id="total-items-cart">My Bag 0 item(s)</p>
+          <div id="cart-append-change">
             <div id="cart-shown-images">
-
-                <div id="cart-shown-left">
-
-                    <div class="offer-div" id="left-offer-color">
-
-                        <p> <span><img class="truckmove" src="https://images.bewakoof.com/web/Red-truck.png" alt="truck"
-                                    style="width: 19px; height: 12px; animation-duration: 2s;"></span>Yay! You get FREE
-                            delivery on this order</p>
-
-                    </div>
-                    <div id="cart-dom-clear">
-
-                        <div id="cart-push-prdt">
-
-                            <div id="cart-descr-img">
-                                <div id="cart-descr">
-                                    <p>Know Your Power Boyfriend T-Shirt</p>
-                                    <p id="actual_price">₹275 <span id="mrp-price"></span></p>
-                                    <div>
-                                        <p class="green-color">You saved ₹<span id="saved-amt">526</span>!</p>
-                                    </div>
-
-                                    <div id="size-qty">
-                                        <div id="size">
-                                            <!-- select start  -->
-                                            <select id="select-value">
-                                                <option>size:</option>
-                                                <option>Xs</option>
-                                                <option>S</option>
-                                                <option>M</option>
-                                                <option>L</option>
-                                                <option>XL</option>
-                                                <option>2XL</option>
-                                                <option>7</option>
-                                                <option>3XL</option>
-                                            </select>
-                                            <!-- select end  -->
-                                        </div>
-                                        <div id="qty">
-                                            <!-- qty start  -->
-                                            <select>
-                                                <option>quantity:</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                                <option>7</option>
-                                                <option>8</option>
-                                                <option>9</option>
-                                                <option>10</option>
-                                            </select>
-                                            <!-- qty end  -->
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div id="cart-img">
-                                    <img
-                                        src="https://images.bewakoof.com/t320/men-s-purple-find-your-inner-minion-oversized-t-shirt-582620-1678436922-1.jpg">
-                                </div>
-                            </div>
-
-                            <!-- cart-desc-img-end -->
-                            <hr>
-                            <div id="remove-wishlist">
-
-                                <div>Remove</div>
-
-                                <div>Move to Wishlist</div>
-                            </div>
-
-                        </div>
-                        <!-- cart-push-prdt end -->
-                    </div>
-
-                    <div id="wishlist-container"></div>
-
+      
+      
+      
+      
+              <div id="cart-shown-left">
+      
+                <div class="offer-div" id="left-offer-color">
+      
+                  <p> <span><img class="truckmove" src="https://images.bewakoof.com/web/Red-truck.png" alt="truck"
+                        style="width: 19px; height: 12px; animation-duration: 2s;"></span>Yay! You get FREE
+                    delivery on this order</p>
+      
                 </div>
-                <div id="cart-shown-right">
-
-                    <div class="offer-div" id="offer-div">
-                        <p>Save extra ₹30 with TriBe</p>
-
-                    </div>
-                    <div class="offer-div" id="grey-border">
-                        <p>Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW200 New customers
-                            only!</p>
-                    </div>
-                    <div id="border-grey">
-                        <div class="referal-redeem">
-                            <div>
-                                <div id="Coupon-btn">
-                                    Have a Coupon / Referral / Gift Card ?</div>
-                                <div>Redeem >></div>
-                            </div>
-
-
-                        </div>
+                <div id="cart-dom-clear">
+      
+                  <div id="cart-push-prdt">
+      
+                    <div id="cart-descr-img">
+                      <div id="cart-descr">
+                        <p>Know Your Power Boyfriend T-Shirt</p>
+                        <p id="actual_price">₹275 <span id="mrp-price"></span></p>
                         <div>
-
-                            <div id="cont-price-summ" class="offer-div">PRICE SUMMARY</div>
-                            <div id="price-summary">
-                                <div>
-                                    <p>Total MRP (Incl. of taxes)</p>
-                                    <p>Delivery Fee </p>
-                                    <p>Bag Discount </p>
-                                    <p>Subtotal </p>
-                                </div>
-                                <div>
-                                    <p class="total_calculate_price">null</p>
-                                    <p>FREE</p>
-                                    <p class="bag-discount">0</p>
-                                    <p class="Subtotal"></p>
-                                </div>
-
-                            </div>
-                            <div class="offer-div" id="saving-div">You are saving ₹52 on this order</div>
-                            <div id="Total-amount-address">
-                                <div>
-                                    <p>Total</p>
-                                    <p class="Grand-total-pay">0</p>
-                                </div>
-                                <div>
-                                    <button id="adress-payment-btn">ADD ADDRESS</button>
-                                </div>
-                            </div>
+                          <p class="green-color">You saved ₹<span id="saved-amt">526</span>!</p>
                         </div>
+      
+                        <div id="size-qty">
+                          <div id="size">
+                            <!-- select start  -->
+                            <select id="select-value">
+                              <option>size:</option>
+                              <option>Xs</option>
+                              <option>S</option>
+                              <option>M</option>
+      
+                              <option>L</option>
+      
+                              <option>XL</option>
+                              <option>2XL</option>
+                              <option>7</option>
+                              <option>3XL</option>
+      
+      
+      
+                            </select>
+                            <!-- select end  -->
+                          </div>
+                          <div id="qty">
+                            <!-- qty start  -->
+                            <select>
+                              <option>quantity:</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+      
+                              <option>4</option>
+      
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+      
+                              <option>9</option>
+      
+                              <option>10</option>
+      
+                            </select>
+                            <!-- qty end  -->
+                          </div>
+                        </div>
+      
+                      </div>
+      
+      
+                      <div id="cart-img">
+                        <img
+                          src="https://images.bewakoof.com/t320/men-s-purple-find-your-inner-minion-oversized-t-shirt-582620-1678436922-1.jpg">
+                      </div>
                     </div>
+                 
+                    <!-- cart-desc-img-end -->
+                    <hr>
+                    <div id="remove-wishlist">
+      
+                      <div>Remove</div>
+      
+                      <div>Move to Wishlist</div>
+                    </div>
+      
+                  </div>
+                  <!-- cart-push-prdt end -->
                 </div>
+      
+                <div id="wishlist-container"></div>
+      
+      
+              </div>
+              <div id="cart-shown-right">
+      
+                <div class="offer-div" id="offer-div">
+                  <p>Save extra ₹52 with TriBe</p>
+      
+                </div>
+                <div class="offer-div" id="grey-border">
+                  <p>Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW200 New customers only!</p>
+                </div>
+                <div id="border-grey">
+                  <div class="referal-redeem">
+                    <div>
+                      <div id="Coupon-btn">
+      
+                        Have a Coupon / Referral / Gift Card ?</div>
+                      <div>Redeem >></div>
+                    </div>
+      
+      
+                  </div>
+                  <div>
+      
+                    <div id="cont-price-summ" class="offer-div">PRICE SUMMARY</div>
+                    <div id="price-summary">
+                      <div>
+                        <p>Total MRP (Incl. of taxes)</p>
+                        <p>Delivery Fee </p>
+                        <p>Bag Discount </p>
+                        <p>Subtotal </p>
+                      </div>
+                      <div>
+                        <p class="total_calculate_price">null</p>
+                        <p>FREE</p>
+                        <p class="bag-discount">0</p>
+                        <p class="Subtotal"></p>
+                      </div>
+      
+                    </div>
+                    <div class="offer-div" id="saving-div">You are saving ₹52 on this order</div>
+                    <div id="Total-amount-address">
+                      <div>
+                        <p>Total</p>
+                        <p class="Grand-total-pay">0</p>
+                      </div>
+                      <div>
+                        <button id="adress-payment-btn">ADD ADDRESS</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div id="payment_secure">
-                <img src="https://images.bewakoof.com/web/secure-payments-image.png">
+              <img src="https://images.bewakoof.com/web/secure-payments-image.png">
             </div>
+          </div>
+      
         </div>
-
-    </div>
 </body>
-
 </html>
-
-<script>
-
-</script>
