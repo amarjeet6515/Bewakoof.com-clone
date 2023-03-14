@@ -29,6 +29,9 @@
 }
 .top3 p{
     text-align: center;
+    font-size: 12px;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .top4{
     display: flex;
