@@ -9,40 +9,41 @@
 </head>
 <body>
     <div class="parent">
-
+     
+        <div class ="pics">
     <div class="small_image" style="padding-right:-300px ;">
         <div >
           <img 
             id="muliple_img1"
-            src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1637159799-4.jpg"
+            src=""
             alt=""
           />
         </div>
         <div>
           <img
             id="muliple_img2"
-            src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1638164157-1.jpg"
+            src=""
             alt=""
           />
         </div>
         <div>
           <img
             id="muliple_img3"
-            src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1638164157-1.jpg"
+            src=""
             alt=""
           />
         </div>
         <div>
           <img
             id="muliple_img4"
-            src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1638164157-1.jpg"
+            src=""
             alt=""
           />
         </div>
         <div>
           <img
             id="muliple_img5"
-            src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1638164157-1.jpg"
+            src=""
             alt=""
           />
         </div>
@@ -50,117 +51,75 @@
       <!-- multiple product image part ends -->
 
       <!-- main product page image start -->
-         <div id="box1" >
         <div  id="big_image">
           <img
             id="main_img_1"
-            src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1638164157-1.jpg"
+            src=""
             alt=""
           />
         </div>
-          </div>
+    
+        </div>
       <!-- main product page image start-->
 
       <!-- product details start -->
       <div class="product_desc">
         <div class="web_name">
-          <h6>bewakoof</h6>
-          <p id = "product_name_main">Meteore Grey Half Sleeve T-Shirt</p>
-          <div class="star">
-            <img
-              src="https://images.bewakoof.com/web/fill-1-2x-1622112875.webp"
-              alt=""
-            />
-            <img
-              src="https://images.bewakoof.com/web/fill-1-2x-1622112875.webp"
-              alt=""
-            />
-            <img
-              src="https://images.bewakoof.com/web/fill-1-2x-1622112875.webp"
-              alt=""
-            />
-            <img
-              src="https://images.bewakoof.com/web/fill-1-2x-1622112875.webp"
-              alt=""
-            />
-            <img
-              src="https://images.bewakoof.com/web/Star-50-1625147036.png"
-              alt=""
-            />
-            <p>4.5/5</p>
-            <p>(Based On 705 rating)</p>
+          <h2 style="color: rgba(128, 128, 128, 0.725);">Bewakoof®</h2>
+          <h3 id = "product_name_main">Meteore Grey Half Sleeve T-Shirt</h3>
+          <div class="star">            
+            <h5 style="border: 1px solid; background-color: rgb(227, 222, 222);padding-left: 5px;padding: 2px;font-size: 20px;">4.5</h5>
           </div>
-          <div class="price">
-            <p id = "product_new_price_main">349</p>
-            <p id = "product_original_price_main">strick price</p>
-            <p id = "product_discount_percentage_main" >Discount</p>
+          <div id="price">
+            <div><h1 id = "product_new_price_main">₹349</h1></div>
+            <div><h3 id = "product_original_price_main" style="text-decoration: line-through;padding-right: 10px;">₹1099 </h3></div>
+            <div><p id = "product_discount_percentage_main" style="color: rgb(27, 180, 27);font-size: 25px;" >71% off</p></div>
           </div>
+          
+
           <p>Inclusive of taxes</p>
-          <hr />
+          <h3 style="border: 2px;background-color: green;padding: auto;color: white;width: 32%;padding-left: 5px;">BUY 3 FOR 999</h3>
+             
+
+      
           <p>
             TriBe Membership get an extra Discount of <b>₹40</b> and FREE shipping.
           </p>
           <a href="">Learn More</a>
-          <hr />
-          <h3>COLOR OPTION :</h3>
-          <div id="colors">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <span></span>
-          </div>
-
+        
+          
           <div id="product_size">
             <h3>Select Size</h3>
             <p><a href="">Size Guide</a></p>
           </div>
           <div id="product_size_option">
-            <span><p>S</p></span>
-            <span><p>M</p></span>
-            <span><p>L</p></span>
-            <span><p>XL</p></span>
-            <span><p>2XL</p></span>
+            <p>S</p>
+          <p>M</p>
+          <p>L</p>
+          <p>XL</p>
+          <p>2XL</p>
           </div>
-          <div class="add_product_in_cart">
-            <li>
-              <a href="#"
-                ><span><i class="far fa-heart"></i></span
-              ></a>
+          <div class="add_product">
+            <div id="btn1" > <button onclick="storeDataToCart()">ADD TO CART</button></div>
+            <div id="btn2"><button  onclick="storeDataToCart()">WISHLIST</button></div>
+          </div>
+
+          <ul>
+            <li>SAVE EXTRA WITH 2 OFFERS
+              <li style="text-align: justify;">Get Rs.200 instant discount on your First Purchase above Rs.999.</li>
+              <li></li>
             </li>
-            <button onclick="storeDataToCart()">Add To Bag</button>
-          </div>
-          <hr />
-          <div class="special_price_div">
-            <li><h5>SAVE EXTRA WITH 2 OFFER</h5></li>
-            <li>
-              <span class="plus_icons_offer">+</span>
-              <div class="special_price_offer"></div>
-            </li>
-          </div>
-          <hr />
-          <div class="special_price_div">
-            <li><h5 >PRODUCT DESCRIPTION</h5></li>
-            <li>
-              <span class="plus_icons_pro_desc">+</span>
-              <div class="special_price_desc"></div>
-            </li>
-          </div>
-          <hr />
-          <div class="special_price_div">
-            <li><h5>15 DAY RETURN & EXCHANGE</h5></li>
-            <li>
-              <span class="plus_icons_policy">+</span>
-              <div class="special_price_policy"></div>
-            </li>
-          </div>
+
+          </ul>
+        
         </div>
-      </div>
+      
     </div>
+   
+    </div>
+
+
+    
     </div>
     <div class="recent_view_header">Recently Viewed</div>
     <div id="recent">
@@ -169,25 +128,43 @@
           src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1637159799-4.jpg"
           alt=""
         />
+        <div id="price">
+          <div><h2>₹699</h2></div> 
+        <div><h3 style="text-decoration: line-through;color: rgb(180, 171, 171);">₹1499</h3></div>
+        </div>
+        
       </div>
       <div>
         <img
           src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1637159799-4.jpg"
           alt=""
         />
+        <div id="price">
+          <div><h2>₹499</h2></div> 
+        <div><h3 style="text-decoration: line-through;color: rgb(180, 171, 171);">₹1001</h3></div>
+        </div>
       </div>
       <div>
         <img
           src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1637159799-4.jpg"
           alt=""
         />
+        <div id="price">
+          <div><h2>₹700</h2></div> 
+        <div><h3 style="text-decoration: line-through;color: rgb(180, 171, 171);">₹1099</h3></div>
+        </div>
       </div>
       <div>
         <img
           src="https://images.bewakoof.com/t540/meteor-grey-half-sleeve-t-shirt-211953-1637159799-4.jpg"
           alt=""
         />
+        <div id="price">
+          <div><h2>₹599</h2></div> 
+        <div><h3 style="text-decoration: line-through;color: rgb(180, 171, 171);">₹1009</h3></div>
+        </div>
       </div>
     </div>
 </body>
 </html>
+<script src="prodata.js"></script>
