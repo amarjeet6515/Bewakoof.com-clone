@@ -1,14 +1,15 @@
 
-*{
+    *{
     margin: 0px;
     padding: 0px;
     }
-    #navbar
+    #navbar_container
     {
         position: fixed;
-      
         width: 100%;
         background-color: white;
+        top: 0;
+        left: 0;
     }
     #navbar_top
     {

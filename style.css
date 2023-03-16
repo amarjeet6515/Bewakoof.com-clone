@@ -1,5 +1,5 @@
 .container>img{
-    width: 1334px;
+    width: 1350px;
 }
 .container>h3{
     text-align: center;
@@ -115,6 +115,7 @@ footer{
 footer h4{
     color: #fdd835;
     font-size: 12px;
+    padding: 10px 0;
 }
 footer p{
     color: white;
@@ -138,4 +139,9 @@ footer p{
 }
 .inside2-bottom1{
     padding: 10px 0
+}
+footer h2{
+    margin: 10px 0 10px 102px;
+    color: #fdd835;
+    padding-top: 25px;
 }
