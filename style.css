@@ -145,3 +145,8 @@ footer h2{
     color: #fdd835;
     padding-top: 25px;
 }
+@media  only screen and (min-width: 510px) and (max-width: 720px) {
+    #list{
+          grid-template-columns: repeat(2, 1fr);
+    }
+}
