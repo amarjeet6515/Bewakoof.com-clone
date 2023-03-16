@@ -1,0 +1,25 @@
+.parent{
+    display: flex;
+    width: 100%;
+}
+
+.small_image img{
+    width: 25%;
+}
+
+#big_image img{
+    width: 80%;
+}
+
+#recent{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(4,1fr);
+    gap :10px;
+    
+}
+#recent img{
+    width: 80%;
+    height: 70%;
+
+}

@@ -12,8 +12,9 @@
       #fltr{
         display: flex;
         justify-content: space-evenly;
+       
       }
-    
+   
       .left-filter li{
         display: block;
         font-size: 20px;
@@ -52,6 +53,7 @@
             height: 70%;
             margin-left: 200px;
             margin-right: 200px;
+            
            
            
         }
@@ -71,11 +73,11 @@
 </head>
 <body>
     <h1> <u> Men Cloth</u>ing<span style="color: rgba(128, 128, 128, 0.663);"> (6330)</span></h1>
-    <select name="" id="" style="margin-left:74%; padding: 5px; margin-bottom: 10px; border: none;" >
+    <select name="" id="price" onchange="sortPrice()" style="margin-left:74%; padding: 5px; margin-bottom: 10px; border: none;" >
       <option value="">Popular</option>
       <option value="">new</option>
-      <option value="">Price : low to high</option>
-      <option value="">Price : high to low</option>
+      <option value="lth">Price : low to high</option>
+      <option value="htl">Price : high to low</option>
     </select>
     <div id="fltr">
       
@@ -93,7 +95,7 @@
      <li class="a1"><a href="">Sizes</a>
        <div class="submenu">
            <ul>
-             <li><a href=""> XS</a></li>
+             <li> <input type="checkbox"> XS</li>
              <li><a href="">S</a></li>
              <li><a href="">M</a></li>
              <li><a href="">L</a></li>
@@ -206,20 +208,6 @@
        </div>
      </li>
  
-     <li class="a1"><a href="">Fit</a><a href=""></a>
-       <div class="submenu">
-           <ul>
-             <li><a href="">Oversized</a></li>
-               <li><a href="">Regular Fit</a></li>
-               <li><a href="">Slim Fit</a></li>
-               <li><a href="">Unisex</a></li>
-               <li><a href="">Boxy Fit</a></li>
-               <li><a href="">Super Loose</a></li>
-               <li><a href="">Relaxed Fit</a></li>    
-               <li><a href="">Monster Fit</a></li>
-           </ul>
-         </div>
-       </li>
  
        <li class="a1"><a href="">Sleeve</a><a href=""></a>
          <div class="submenu">
@@ -321,94 +309,177 @@
   id : 1,
   qty : 1,
   image : "https://images.bewakoof.com/t640/men-s-black-save-our-home-t-shirt-276160-1655747776-1.jpg",
+  image_1 :"https://images.bewakoof.com/t1080/men-s-black-save-our-home-t-shirt-276160-1655747782-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/men-s-black-save-our-home-t-shirt-276160-1655747787-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/men-s-black-save-our-home-t-shirt-276160-1655747792-4.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/men-s-black-save-our-home-t-shirt-276160-1655747798-5.jpg",
   brand : "Bewakoof®",
   name : "Men's Black Save Our Home T-shirt",
-  mrp :"₹ 449",
-  price : "₹ 1049"
+  tribe : "₹40",
+  mrp :"₹449",
+  price : "₹1049",
+  discount : "59% off"
  },
  {
   id : 2,
   qty : 1,
   image : "https://images.bewakoof.com/t640/men-s-purple-find-your-inner-minion-oversized-t-shirt-582620-1678436922-1.jpg",
+  image_1 :"https://images.bewakoof.com/t1080/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228994-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228999-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677229010-5.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677229015-6.jpg",
   brand : "Bewakoof®",
   name : "Men's Purple Find Your Inner Minion Graphic Printed Oversized T-shirt",
+  tribe : "₹60",
   mrp :"₹ 449",
-  price : "₹ 1499"
+  price : "₹ 1499",
+  discount : "53%off"
  },
  {
   id : 3,
   qty : 1,
   image : "https://images.bewakoof.com/t640/men-s-blue-hacker-t-shirt-582617-1678436595-1.jpg",
+  image_1: "https://images.bewakoof.com/t1080/men-s-blue-hacker-t-shirt-582617-1678436595-1.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/men-s-blue-hacker-t-shirt-582617-1678436600-2.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/men-s-blue-hacker-t-shirt-582617-1678436611-4.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/men-s-blue-hacker-t-shirt-582617-1678436616-5.jpg",
   brand : "Bewakoof®",
   name : "Men's Blue Hacker Graphic Printed T-shirt",
+  tribe : "₹35",
   mrp :"₹ 399",
-  price : "₹ 1499"
+  price : "₹ 1499",
+  discount : "73% off"
  },
  {
   id : 4,
   qty : 1,
   image : "https://images.bewakoof.com/t640/men-s-pink-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582613-1678436525-1.jpg",
+  image_1 : "https://images.bewakoof.com/t1080/men-s-pink-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582613-1678436531-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/men-s-pink-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582613-1678436536-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/men-s-pink-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582613-1678436541-4.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/men-s-pink-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582613-1678436546-5.jpg",
   brand : "Bewakoof®",
   name : "Men's Pink Chainsaw Devil Graphic Printed Oversized T-shirt",
+  tribe : "₹60",
   mrp :"₹ 699",
-  price : "₹ 1499"
+  price : "₹ 1499",
+  discount : "53% off"
  },
  {
   id : 5,
   qty : 1,
   image : "https://images.bewakoof.com/t640/men-s-green-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582615-1678437289-1.jpg",
+  image_1 : "https://images.bewakoof.com/t1080/men-s-green-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582615-1678437294-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/men-s-green-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582615-1678437299-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/men-s-green-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582615-1678437305-4.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/men-s-green-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582615-1678437315-6.jpg",
   brand : "Bewakoof®",
   name : "Men's Green Find Your Inner Minion Graphic Printed Oversized T-shirt",
+  tribe : "₹65",
   mrp :"₹ 699",
-  price : "₹ 1499"
+  price : "₹ 1499", 
+  discount : "58% off"
  },
  {
   id : 6,
   qty : 1,
   image : "https://images.bewakoof.com/t640/hacker-oversize-fit-full-sleeve-t-shirt-582705-1678436798-1.jpg",
+  image_1 : "https://images.bewakoof.com/t1080/hacker-oversize-fit-full-sleeve-t-shirt-582705-1678436804-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/hacker-oversize-fit-full-sleeve-t-shirt-582705-1678436809-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/hacker-oversize-fit-full-sleeve-t-shirt-582705-1678436815-4.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/hacker-oversize-fit-full-sleeve-t-shirt-582705-1678436820-5.jpg",
   brand : "Bewakoof®",
   name : "Men's Blue Hacker Graphic Printed Oversized T-shirt",
+  tribe : "₹59",
   mrp :"₹ 699",
-  price : "₹ 1499"
+  price : "₹ 1499",
+  discount : "57% off"
  },
  {
   id : 7,
   qty : 1,
   image : "https://images.bewakoof.com/t640/men-s-blue-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582614-1678436713-1.jpg",
+  image_1 : "https://images.bewakoof.com/t1080/men-s-blue-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582614-1678436718-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/men-s-blue-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582614-1678436723-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/men-s-blue-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582614-1678436729-4.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/men-s-blue-find-your-inner-minion-oversized-fit-full-sleeve-t-shirt-582614-1678436734-5.jpg",
   brand : "Bewakoof®",
   name : "OFFICIAL UNIVERSAL MERCHANDISE",
+  tribe : "₹30",
   mrp :"₹ 699",
-  price : "₹ 1409"
+  price : "₹ 1409",
+  discount :"62% off"
+
  },
  {
   id : 8,
   qty : 1,
   image : "https://images.bewakoof.com/t640/gohan-half-sleeve-t-shirt-512884-1655993277-1.jpg",
+  image_1 : "https://images.bewakoof.com/t1080/gohan-half-sleeve-t-shirt-512884-1655993282-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/gohan-half-sleeve-t-shirt-512884-1655993287-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/gohan-half-sleeve-t-shirt-512884-1655993293-4.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/gohan-half-sleeve-t-shirt-512884-1655993298-5.jpg",
   brand : "Bewakoof®",
   name : "Men's Black Gohan Graphic Printed T-shirt",
+  tribe : "₹20",
   mrp :"₹ 609",
-  price : "₹ 1099"
+  price : "₹ 1099",
+  discount :"55% off"
  },
  {
   id : 9,
   qty : 1,
   image : "https://images.bewakoof.com/t640/men-s-brown-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582612-1678437332-1.jpg",
+  image_1 : "https://images.bewakoof.com/t1080/men-s-brown-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582612-1678437337-2.jpg",
+  image_2 : "https://images.bewakoof.com/t1080/men-s-brown-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582612-1678437343-3.jpg",
+  image_3 : "https://images.bewakoof.com/t1080/men-s-brown-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582612-1678437353-5.jpg",
+  image_4 : "https://images.bewakoof.com/t1080/men-s-brown-chainsaw-devil-oversized-fit-full-sleeve-t-shirt-582612-1678437348-4.jpg",
   brand : "Bewakoof®",
   name : "Men's Brown Chainsaw Devil Graphic Printed Oversized",
+  tribe : "₹35",
   mrp :"₹ 829",
-  price : "₹ 1499"
+  price : "₹ 1499",
+  discount : "52% off"
+
  }
 ]
 
-displayData();
+displayData(products);
 
-function displayData(){
-  products.map( function(el,ind){
+function sortPrice(){
+
+  var selected=document.getElementById("price").value;
+  if(selected == "lth")
+  {
+       products.sort(function (a,b){
+      return a.mrp - b.mrp;
+    });
+  }
+
+  if(selected == "htl")
+  {
+       products.sort(function (a,b){
+      return b.mrp - a.mrp;
+    });
+  }
+
+  displayData(products);
+  console.log(products);
+}
+
+function displayData(pro){
+  document.querySelector("#p-body").textContent="";
+  pro.map( function(el,ind){
     var parent=document.createElement("div");
 
         var image =document.createElement("img");
         image.setAttribute("src",el.image);
         image.setAttribute("alt",el.name);
+
+        image.addEventListener("click" , function() {
+          storeProduct(el)
+        });
+
         var brand=document.createElement("h4");
         brand.textContent=el.brand;
         brand.style.color="grey"
@@ -416,14 +487,18 @@ function displayData(){
         name.textContent=el.name;
 
         var mrp=document.createElement("p");
-        mrp.textContent=el.mrp;
+        mrp.textContent= el.mrp;
 
         var price=document.createElement("p");
-        price.textContent=el.price;
+        price.textContent= el.price;
 
         parent.append(image,brand,name,mrp,price);
         document.querySelector("#p-body").append(parent);
           })
         }
  
+        function storeProduct(el) {
+          localStorage.setItem("ProductDetails" , JSON.stringify(el));
+          window.localStorage.href="productdesc.html";
+        }
 </script>
