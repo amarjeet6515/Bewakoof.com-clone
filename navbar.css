@@ -10,6 +10,9 @@
         background-color: white;
         top: 0;
         left: 0;
+        font-family: 'Golos Text', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
     }
     #navbar_top
     {
@@ -61,7 +64,7 @@
     }#logo_menu>li>a{
         text-decoration: none;
         color: #333;
-        font-size: 16px;
+        font-size: 14px;
     }#logo_menu>li>a>img{
         width: 150px;
         
@@ -82,7 +85,7 @@
     {
         text-decoration: none;
         color: #333;
-        font-size: 20px;
+        font-size: 14px;
       
     }
     
@@ -204,5 +207,36 @@
         height:35px;
         width:35px;
     }
+    @media  only screen and (min-width: 768px) and (max-width: 1024px) {
+        #navbar_menu
+        {
+            width: 100%;
+            display: flex;
+            justify-content:flex-start;
+            font-size: 13px;
+           
+        }
+        #navbar_top
+        {
+            visibility: hidden;
+          
+        }
+        #logo_menu>li{
+            visibility: hidden;
+        }
+        #navbar_container {
+            position: fixed;
+            width: 50%;
+            background-color: white;
+            top: 0;
+            left: 0;
+            font-family: 'Golos Text', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            padding: 0px;
+        }
+        
+    }
+
     
       
