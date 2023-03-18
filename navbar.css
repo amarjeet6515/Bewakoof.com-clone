@@ -203,5 +203,33 @@
         height:35px;
         width:35px;
     }
-    
+    @media only screen and (max-width: 800px) {
+        .navbar_top {
+            display: none;
+          } 
+        .order{
+          flex-direction: column;
+        } 
+        .order-item{
+          max-width: 100%;
+        }  
+        .container{
+          grid-template-columns: 1fr 1fr;
+        } 
+      }
+  
+      @media only screen and (max-width: 500px) {
+        .menu {
+          display: none;
+        }  
+        .order{
+            flex-direction: column;
+          } 
+          .order-item{
+            max-width: 100%;
+          }  
+          .container{
+            grid-template-columns: 1fr 1fr;
+        } 
+      }
       
