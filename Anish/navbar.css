@@ -8,11 +8,6 @@
         position: fixed;
         width: 100%;
         background-color: white;
-        top: 0;
-        left: 0;
-        font-family: 'Golos Text', sans-serif;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
     }
     #navbar_top
     {
@@ -35,6 +30,8 @@
         margin-left: 50px;
     }
     #navbar_top_left>li>a{
+        font-size:10px;
+        font-weight: 500;
         text-decoration: none;
         color: #333;
     }
@@ -58,13 +55,13 @@
     }
     #logo_menu>li{
         list-style-type: none;
-        margin: 15px 20px;
+    
         
       
     }#logo_menu>li>a{
         text-decoration: none;
         color: #333;
-        font-size: 14px;
+        font-size: 16px;
     }#logo_menu>li>a>img{
         width: 150px;
         
@@ -85,8 +82,19 @@
     {
         text-decoration: none;
         color: #333;
-        font-size: 14px;
+        font-size: 20px;
       
+    }
+    .menuSelect {
+        display: inline-table;
+    font-size: 13px !important;
+    font-family: montserrat,sans-serif;
+    vertical-align: middle;
+    line-height: 45px;
+    padding: 0 11px;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
     }
     
     #navsearch_bar>li>input
@@ -111,8 +119,12 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        font-size: 13px !important;
+    font-family: montserrat,sans-serif;
        
-    }#navbar_menu>li
+    }
+    
+    #navbar_menu>li
     {
         list-style: none;
         font-size: 18px;
@@ -203,40 +215,42 @@
         font-weight: 100;
         
     }
+    #navbar_small{
+        display: none;
+    }
     #cart-icon{
         height:35px;
         width:35px;
     }
-    @media  only screen and (min-width: 768px) and (max-width: 1024px) {
-        #navbar_menu
-        {
-            width: 100%;
-            display: flex;
-            justify-content:flex-start;
-            font-size: 13px;
-           
-        }
-        #navbar_top
-        {
-            visibility: hidden;
-          
-        }
-        #logo_menu>li{
-            visibility: hidden;
-        }
-        #navbar_container {
-            position: fixed;
-            width: 50%;
-            background-color: white;
-            top: 0;
-            left: 0;
-            font-family: 'Golos Text', sans-serif;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            padding: 0px;
-        }
-        
-    }
+    @media only screen and (max-width: 990px) {
+        #navbar_top, #navbar_search {
+            display: none;
 
+        }
+         #navbar_small{
+        display: flex;
+        height:56px;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .mobile-hamburger{
+        padding: 0 8px 0 16px
+    }
+    .mobile-logo{
+        flex:1;
+        margin-left: 15px;
+    }
+    .header-icon{
+        color: #000;
+        display: inline-block;
+        font-size: 20px;
+        padding: 14px 8px 0;
+        line-height: 40px;
+    }
+    }
     
-      
+  
+    @media only screen and (max-width: 500px) {
+           
+    }
