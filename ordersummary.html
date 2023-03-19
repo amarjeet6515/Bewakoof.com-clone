@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order Summary- <Bewakoof class="com"></Bewakoof>
+    </title>
+    <link rel="icon"
+        href="https://play-lh.googleusercontent.com/aVQ7cxm-rkTk9x6zxIPpHJCj7Woad7T6THYoS-MjdDpxQTPXW5MJyzMDI9HvAohvNA"
+        type="image/icon type">
     <style>
         * {
             margin: 0px;
@@ -20,6 +24,7 @@
             display: flex;
             align-items: center;
             font-family: sans-serif;
+
 
         }
 
@@ -47,11 +52,17 @@
             margin: 40px auto;
             display: flex;
 
+
         }
 
         #summary-shown-details>div {
 
             margin: 10px;
+
+
+
+
+
         }
 
         #summary-shown-left {
@@ -63,15 +74,19 @@
 
             margin-bottom: 10px;
             margin-top: 10px;
+
+
         }
 
         #summary-shown-right {
             flex: 2;
             border: 0.01px solid rgb(206, 203, 203);
             height: 300px;
+
         }
 
-     
+        #summary-push-prdt {}
+
         .delivery-price-estimated-color {
 
             padding: 0px;
@@ -138,6 +153,8 @@
             justify-content: space-between;
             margin-top: 0px;
             border-bottom: none;
+
+
         }
 
         #price-summary p {
@@ -163,6 +180,8 @@
             align-items: center;
             background-color: rgba(29, 136, 2, 0.1);
             color: rgb(29, 136, 2);
+
+
         }
 
         #adress-payment-btn {
@@ -226,14 +245,6 @@
         #delivery-estimate h5+p {
             margin-top: 10px;
         }
-
-        #summary-items {
-            font-size: 30px;
-        }
-
-
-        
-
     </style>
 </head>
 
@@ -249,29 +260,33 @@
                 <div id="summary-push-prdt">
                     <p class="delivery-price-estimated-color">DELIVERY ADDRESS</p>
                     <div id="delivery-details">
-                        <h4> <span class="address-fullname">Akshay Bellad </span><span class="other_span">Other</span>
+                        <h4> <span class="address-fullname">V A Magendran </span><span class="other_span">Other</span>
                         </h4>
-                        <p> <span class="flatno">Home no.118,udbhav nagar 2,jule Solapur,Saiful</span>
-                            <span class="city_district">Solapur</span> ,<span class="state">Maharashtra</span> ,
-                            <span class="pincode">413008</span>
+                        <p> <span class="flatno">6-138,thiruvalluvar street, ekambarakuppam,</span>
+                            <span class="city_district">Chittoor</span> ,<span class="state">Andhra Pradesh</span> ,
+                            <span class="pincode">517592</span>
                         </p>
-                        <p>Mobile :<span class="mobilenumber"> 8888427545 </span> </p>
-                               
-                           
+                        <p>Mobile :<span class="mobilenumber">
+                                9398451030
+                            </span> </p>
                         <button>CHANGE OR ADD ADDRESS</button>
                     </div>
                 </div>
                 <div id="delivery-estimate">
                     <h5 class="delivery-price-estimated-color">ESTIMATED DELIVERY</h5>
-                    <p class="shipment-total-items">Shipment 1 of 2 : By 25 MARCH 2023</p>
+                    <p class="shipment-total-items">Shipment 1 of 2 : By 23 March 2023</p>
                     <div class="deleivery-adress-prdt-append">
                         <div class="deleivery-adress-prdt">
                             <img height="100%"
-                                src="https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg">
+                                src="https://images.bewakoof.com/t320/not-ordinary-round-neck-3-4-sleeves-t-shirts-women-s-printed-round-neck-3-4-sleeve-t-shirts-354972-1621408984.jpg">
                             <div>
                                 <p>Not Ordinary Round Neck 3/4 Sleeves T-shirt</p>
                                 <p> Qty : 1</p>
                             </div>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -314,30 +329,32 @@
 </html>
 <script>
 
-    var flag = JSON.parse(localStorage.getItem("flag"));
-    var address_location = JSON.parse(localStorage.getItem("address_location"));
-    console.log(address_location);
-    document.querySelector(".other_span").innerText = address_location;
+var flag = JSON.parse(localStorage.getItem("flag"));
+var address_location = JSON.parse(localStorage.getItem("address_location"));
+console.log(address_location);
+document.querySelector(".other_span").innerText = address_location ; 
     let order_summary_array = JSON.parse(localStorage.getItem("bewakoof_cart")) || [];
     console.log(order_summary_array)
 
 
 
     let array = JSON.parse(localStorage.getItem("myaddress_data"));
-    if (array) {
-        array.map(function (elem) {
 
-            var { area, city_district, flatno, fullname, landmark, pincode, state, mobilenumber } = elem;
+    array.map(function (elem) {
 
-            document.querySelector(".address-fullname").textContent = fullname;
-            document.querySelector(".flatno").textContent = flatno;
-            document.querySelector(".city_district").textContent = city_district;
-            document.querySelector(".pincode").textContent = pincode;
-            document.querySelector(".state").textContent = state;
-            document.querySelector(".mobilenumber").textContent = mobilenumber;
+        var { area, city_district, flatno, fullname, landmark, pincode, state, mobilenumber } = elem;
 
-        });
-    }
+        document.querySelector(".address-fullname").textContent = fullname;
+        document.querySelector(".flatno").textContent = flatno;
+        document.querySelector(".city_district").textContent = city_district;
+        document.querySelector(".pincode").textContent = pincode;
+        document.querySelector(".state").textContent = state;
+        document.querySelector(".mobilenumber").textContent = mobilenumber;
+
+
+
+
+    })
 
 
 
@@ -363,7 +380,7 @@
             var p1 = document.createElement("p");
             var p2 = document.createElement("p");
 
-            image.src = n.image1;
+            image.src = n.image;
             p1.textContent = name;
             p2.textContent = "Qty : 1";
 
@@ -376,7 +393,7 @@
 
             var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             month = month[nextweek.getMonth()]
-            document.querySelector(".shipment-total-items").textContent = `Shipment 1 of ${index + 1} : By ${nextweek.getDate() + 3 + " " + month + " " + (nextweek.getFullYear())}`
+            document.querySelector(".shipment-total-items").textContent = `Shipment 1 of ${index + 1} : By ${nextweek.getDate()+3 + " " + month + " " + (nextweek.getFullYear())}`
 
         })
 
@@ -390,17 +407,17 @@
     console.log(order_summary_datas)
     // console.log(order_summary_a)
 
-    var { bag_discount, price, total } = order_summary_datas ?? {};
+    var { bag_discount, price, total } = order_summary_datas;
     console.log(price, total, bag_discount)
-    if (flag == true) {
-        bag_discount = bag_discount + 100;
-        price -= 100;
-    }
+if(flag == true){
+    bag_discount = bag_discount + 100;
+    price -= 100;
+}
 
-    document.querySelector(".total_calculate_price").textContent = "₹ " + total;
-    document.querySelector(".bag-discount").textContent = "₹ " + bag_discount;
-    document.querySelector(".Subtotal").textContent = "₹ " + price;
-    document.querySelector(".Grand-total-pay").textContent = "₹ " + price;
+    document.querySelector(".total_calculate_price").textContent = "₹ "+ total;
+    document.querySelector(".bag-discount").textContent ="₹ "+ bag_discount;
+    document.querySelector(".Subtotal").textContent = "₹ "+ price;
+    document.querySelector(".Grand-total-pay").textContent = "₹ "+ price;
     document.getElementById("saving-div").innerText = `You are saving ₹ ${bag_discount} on this order`;
 
 
@@ -417,7 +434,7 @@
     //     }
 
 
-    document.getElementById("adress-payment-btn").addEventListener("click", function () {
-        window.location.href = "./payment.html";
-    });
+document.getElementById("adress-payment-btn").addEventListener("click",function(){
+    window.location.href="./payment.html";
+});
 </script>

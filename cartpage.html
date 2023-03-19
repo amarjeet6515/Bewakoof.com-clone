@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Online Fashion Shopping for Men,Women,Accessories- <Bewakoof class="com"></Bewakoof>
+  </title>
+  <link rel="icon"
+    href="https://play-lh.googleusercontent.com/aVQ7cxm-rkTk9x6zxIPpHJCj7Woad7T6THYoS-MjdDpxQTPXW5MJyzMDI9HvAohvNA"
+
+    type="image/icon type">
+    
   <link rel="stylesheet" href="cartpage.css">
 </head>
 
@@ -13,7 +19,7 @@
 
   <body>
 
-
+                
     <div class="overlay">
       <div class="overlay-content">
         <p>Have a Coupon / Gift Card?</p>
@@ -68,7 +74,7 @@
         <!-- add home link  -->
         <a href=""><img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" height="25px"> </a>
         <!-- add loger  name or email link  -->
-        <span>Signed as:<p id="logedin-email"></p></span>
+        <span>Signed as:amarjeet.ray8@gmail.com<p id="logedin-email"></p></span>
       </div>
 
       <p id="total-items-cart">My Bag 0 item(s)</p>
@@ -165,7 +171,7 @@
 
             </div>
             <div class="offer-div" id="grey-border">
-              <p>Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW100 New customers only!</p>
+              <p>Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!</p>
             </div>
             <div id="border-grey">
               <div class="referal-redeem">
@@ -176,9 +182,8 @@
                   <div>Redeem >></div>
                 </div>
 
-
-              </div>
-              <div>
+               </div>
+               <div>
 
                 <div id="cont-price-summ" class="offer-div">PRICE SUMMARY</div>
                 <div id="price-summary">
@@ -226,7 +231,7 @@
   var total_price = 0;
 
   var p = document.querySelector("#select-value");
-  console.log(p)
+  // console.log(p)
 
 
   var obj = [
@@ -278,24 +283,31 @@
   var total_calculate_price;
 
   var array = JSON.parse(localStorage.getItem("bewakoof_cart")) || [];
-  console.log(array)
+  console.log(array);
+  if(array.length == 0){
+           window.location.href="cart2.html"
+  }else{
+  // console.log(array)
 
   var saved_amount_array;
   var price_summary;
-  <!--display cart-->
+  // <!--display cart-->
   display_cart(array)
   function display_cart(array) {
 
     document.querySelector("#cart-dom-clear").innerHTML = "";
 
-    console.log(array)
+    // console.log(array)
     saved_amount_array = [];
 
     price_summary = {};
 
     array.map((n, index) => {
-
+      // console.log("hello");
       var subTotalPrice = Math.floor(Number(n.price) - (Number(n.discount) / 100) * n.price);
+      console.log(n.discount);
+      
+      console.log(subTotalPrice);
 
       var { name, image1, price } = n;
       var totaldiv = document.createElement("div")
@@ -308,7 +320,7 @@
       cart_img.id = "cart-img";
 
       var image1 = document.createElement("img");
-      image1.src = n.image1;
+      image1.src = n.image;
 
       cart_img.append(image1)
       var p1 = document.createElement("p");
@@ -321,7 +333,7 @@
 
       var mrp_span = document.createElement("span");
       mrp_span.id = "mrp-price";
-      mrp_span.textContent = "₹" + price;
+      mrp_span.textContent = price;
 
       p2.textContent = "₹" + subTotalPrice;
       p2.append(mrp_span)
@@ -345,7 +357,7 @@
 
       function selected_qty_value() {
 
-        console.log(index)
+        // console.log(index)
       }
 
       var option_qty = document.createElement("option")
@@ -418,11 +430,12 @@
 
       function deleterow() {
 
-        console.log("yes")
+        // console.log("yes")
         array.splice(index, 1)
 
         localStorage.setItem("bewakoof_cart", JSON.stringify(array))
-        display_cart(array)
+        display_cart(array);
+        window.location.reload();
       }
 
       var wishlist = document.createElement("div");
@@ -431,10 +444,10 @@
       remove_wishlist.append(remove, wishlist)
       var x = document.createElement("HR");
       totaldiv.append(cart_desc_div_img, x, remove_wishlist)
-      console.log(totaldiv)
+      // console.log(totaldiv)
       document.querySelector("#cart-dom-clear").append(totaldiv)
 
-      console.log(index)
+      // console.log(index)
       document.querySelector("#total-items-cart").textContent = `My Bag ${index + 1} items(s)`
 
     })
@@ -446,7 +459,7 @@
       total_price += Number(el.price);
     })
 
-    console.log(total_price, 5541)
+    // console.log(total_price, 5541)
 
 
     bag_discounted_amount = saved_amount_array.reduce((m, n) => {
@@ -456,7 +469,7 @@
     document.querySelector("#saving-div").textContent = `You are saving ₹${bag_discounted_amount} on this order`
 
     document.querySelector(".bag-discount").textContent = "₹" + bag_discounted_amount;
-    console.log("bag", bag_discounted_amount)
+    // console.log("bag", bag_discounted_amount)
 
 
     price_summary = {
@@ -465,7 +478,7 @@
       total: total_price,
     }
 
-    console.log(price_summary);
+    // console.log(price_summary);
 
 
     localStorage.setItem("order_summary_data", JSON.stringify(price_summary))
@@ -476,6 +489,7 @@
     document.querySelector(".Subtotal").textContent = "₹" + (sub_total_price);
     document.querySelector(".Grand-total-pay").textContent = "₹" + (sub_total_price);
     // we have to modify tribe value
+    localStorage.setItem("FinalAmount",sub_total_price);
 
     document.querySelector("#Coupon-btn").addEventListener("click", coupountoogle)
 
@@ -487,7 +501,7 @@
 
   document.querySelector(".coupoun-close").addEventListener("click", coupountoogles)
   function coupountoogles() {
-    console.log("yes")
+    // console.log("yes")
     document.querySelector(".overlay").classList.toggle('bg-active')
   }
 
@@ -499,7 +513,7 @@
 
   function coupountoogless() {
     var x = document.querySelector("#coupoun-text").value;
-    console.log(x)
+    // console.log(x)
 
     if (x == "NEW100") {
 
@@ -513,6 +527,7 @@
       document.querySelector("#saving-div").textContent = `You are saving ₹ ${bag_discounted_amount} on this order`
 
       document.querySelector(".Grand-total-pay").textContent = "₹" + (total_price - bag_discounted_amount - 100);
+      localStorage.setItem("finalPrice","total_price - bag_discounted_amount - 100");
       document.querySelector(".overlay").classList.remove('bg-active');
 
     }
@@ -523,7 +538,7 @@
 
   }
 
-  console.log(saved_amount_array)
+  // console.log(saved_amount_array)
 
 
   document.querySelector("#adress-payment-btn").addEventListener("click", address_visible)
@@ -542,7 +557,7 @@
 
 
   var wishlist_data = JSON.parse(localStorage.getItem("bewakoof_wishlist"));
-  console.log(wishlist_data);
+  // console.log(wishlist_data);
 
   display_wishlist_product(wishlist_data);
 
@@ -588,7 +603,7 @@
       wishlistContainer.append(wishlistProduct);
 
       span3.addEventListener("click", function () {
-        console.log("here", index);
+        // console.log("here", index);
 
         wishlist_data.splice(index, 1);
         console.log(wishlist_data);
@@ -625,8 +640,8 @@
     }];
 
     localStorage.setItem("myaddress_data", JSON.stringify(obj))
-    console.log(obj)
-    window.location.href = "ordersummary.html"   //yaha pe orderpage link karna hai
+    // console.log(obj)
+    window.location.href = "os.html"   //yaha pe orderpage link karna hai
   })
 
   function home_button() {
@@ -644,8 +659,12 @@
 
   var customer_data = JSON.parse(localStorage.getItem("customer_whole_data"));
   if (customer_data && customer_data.email_input) {
-  var email = customer_data.email_input;
- 
-}else{
-  document.getElementById("logedin-email").textContent = email;}
+    var email = customer_data.email_input;
+
+  } else {
+    document.getElementById("logedin-email").textContent = email;
+
+  }
+
+}
 </script>
