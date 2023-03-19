@@ -3,9 +3,10 @@
     margin: 0px;
     padding: 0px;
     }
-    #navbar_container
+    #navbar
     {
         position: fixed;
+      
         width: 100%;
         background-color: white;
     }
@@ -119,12 +120,8 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        font-size: 13px !important;
-    font-family: montserrat,sans-serif;
        
-    }
-    
-    #navbar_menu>li
+    }#navbar_menu>li
     {
         list-style: none;
         font-size: 18px;
@@ -249,7 +246,7 @@
         line-height: 40px;
     }
     }
-    
+        }
   
     @media only screen and (max-width: 500px) {
            
