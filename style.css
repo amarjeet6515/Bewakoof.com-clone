@@ -1,0 +1,364 @@
+.container>img{
+    width: 1350px;
+}
+.container>h3{
+    text-align: center;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.top1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.top1>img{
+    width: 435px;
+
+}
+.top2>img{
+    width: 100%;
+    margin: 10px 0;
+}
+.top3{
+    display: flex;
+    justify-content: center;
+}
+.top3 img{
+    width: 130px;
+    padding: 12px;
+}
+.top3 p{
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.top4{
+    display: flex;
+}
+.top4>img{
+    width: 676px;
+}
+.top5{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}.top5>img{
+    width: 219px;
+    margin: auto;
+}
+.top6{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+}
+.top6>img{
+    width: 662px;
+}
+.top7{
+    display: flex;
+
+}
+.top7>img{
+    width: 222px;
+}
+.top8{
+    display: flex;
+    gap: 5px;
+}
+.top8>img{
+    width: 441px;
+}
+.top9{
+    display: flex;
+}
+.top9>img{
+    width: 223px;
+}
+.top10{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+}
+.top10>img{
+    width: 662px;
+}
+footer{
+    background-color: #181818;
+    height: 436px;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.inside1{
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    /* background-color: bisque; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.bottom4in{
+    display: flex;
+}
+.bottom4 input{
+    border: none;
+    border-bottom: 1px solid #fdd835;
+    background-color: #181818;
+}
+.bottom4>.bottom4in>button{
+    background-color: #fdd835;
+    color: #181818;
+    padding: 10px 25px;
+    border: none;
+}
+footer h4{
+    color: #fdd835;
+    font-size: 12px;
+    padding: 10px 0;
+}
+footer p{
+    color: white;
+    margin:  5px 0px;
+    font-size: 12px;
+}
+.inside2{
+    width: 63%;
+    height: 170px;
+    margin-left: 98px;
+    /* background-color: bisque; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.inside2-bottom2-div1{
+    display: flex;
+}
+.inside2-bottom2-div1 img{
+    width: 100px;
+}
+.inside2-bottom1{
+    padding: 10px 0
+}
+footer h2{
+    margin: 10px 0 10px 102px;
+    color: #fdd835;
+    padding-top: 25px;
+}
+@media  only screen and (min-width: 768px) and (max-width: 1024px) {
+    .top1{
+        justify-content: flex-start;
+        margin-left: 10px;
+        gap: 10px;
+    }
+    .top1>img{
+        width: 243px;
+    }
+    .top2>img{
+        margin-left: 10px;
+        width: 97%;
+    }
+    .top3 img {
+        width: 174px;
+        padding: 10px;
+    }
+    .top3 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .top4>img {
+        width: 385px;
+    }
+    .top5{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .top5>img {
+        width: 122px;
+        margin: auto;
+    }
+    .top6>img {
+        width: 376px;
+    }
+    .top7>img {
+        width: 129px;
+    }
+    .top8>img {
+        width: 252px;
+    }
+    .top9>img {
+        width: 128px;
+    }
+    .top10>img {
+        width: 377px;
+    }
+    .container>img {
+        width: 415px;
+    }
+    footer {
+        width: 770px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .inside1 div{
+        display: flex;
+        gap: 7px;
+    }
+    footer p {
+        color: white;
+        font-size: 8px;
+        margin: -40px 8px;
+    }
+    footer h4 {
+        color: #fdd835;
+        font-size: 11px;
+        margin-top: -50px;
+    }
+    footer h2 {
+        margin: -3px 0 -20px 21px;
+        color: #fdd835;
+        padding-top: 10px;
+        font-size: 17px;
+    }
+    .inside1 {
+        width: 94%;
+        height: 108px;
+        margin: auto;
+    }
+    .bottom4in{
+        visibility: none;
+    }
+    .inside2-bottom1{
+        visibility: none;
+    }
+    .inside2 {
+        width: 63%;
+        height: 122px;
+        margin-left: 11px;
+        /* background-color: bisque; */
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom4 input{
+        width: 40%;
+    }
+    .bottom4 button{
+        width: 40%;
+    } 
+    .bottom4{
+        justify-content: flex-end;
+    } 
+}
+@media  only screen and (min-width: 414px) and (max-width: 767px) {
+    .top1{
+        justify-content: flex-start;
+        margin-left: 10px;
+        gap: 10px;
+    }
+    .top1>img{
+        width: 128px;
+    }
+    .top2>img{
+        margin-left: 10px;
+        width: 97%;
+    }
+    .top3 img {
+        width: 112px;
+        padding: 12px;
+    }
+    .top3{
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+    .top4{
+        margin-left: 10px;
+    }
+    .top4>img {
+        width: 201px;
+    }
+    .top5{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .top5>img {
+        width: 66px;
+        margin: auto;
+    }
+    .top6>img {
+        width: 203px;
+    }
+    .top7>img {
+        width: 70px;
+    }
+    .top8>img {
+        width: 137px;
+    }
+    .top9>img {
+        width: 70px;
+    }
+    .top10>img {
+        width: 206px;
+    }
+    .container>img {
+        width: 415px;
+    }
+    footer {
+        width: 421px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .inside1 div{
+        display: flex;
+        gap: 7px;
+    }
+    footer p {
+        color: white;
+        font-size: 8px;
+        margin: -40px 8px;
+    }
+    footer h4 {
+        color: #fdd835;
+        font-size: 8px;
+        margin-top: -50px;
+    }
+    footer h2 {
+        margin: -3px 0 -20px 14px;
+        color: #fdd835;
+        padding-top: 10px;
+        font-size: 17px;
+    }
+    .inside1 {
+        width: 94%;
+        height: 108px;
+        margin: auto;
+    }
+    .bottom4in{
+        visibility: none;
+    }
+    .inside2-bottom1{
+        visibility: none;
+    }
+    .inside2 {
+        width: 63%;
+        height: 122px;
+        margin-left: 11px;
+        /* background-color: bisque; */
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom4 input{
+        width: 40%;
+    }
+    .bottom4 button{
+        width: 40%;
+    }
+
+    
+}
