@@ -35,17 +35,15 @@ bash
 
 Here are some screenshots of the Bewakoof clone website:
 
-![Home Page](Images/home.png)
+![Home Page](image/home.png)
 
-![Product](Images/product.png)
+![Product](images/product.png)
 
-![Product Details](Images/description.png)
+![Product Details](images/prod-desc.png)
 
-![Cart](Images/cart.png)
 
-![Payment](Images/payment.png)
+![Payment](images/pay-gateway.png)
 
-![My Orders](Images/order.png)
 
 
 ## Contact
