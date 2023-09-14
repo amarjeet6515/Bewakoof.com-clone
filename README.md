@@ -37,12 +37,12 @@ Here are some screenshots of the Bewakoof clone website:
 
 ![Home Page](image/home.png)
 
-![Product](images/product.png)
+![Product](image/product.png)
 
-![Product Details](images/prod-desc.png)
+![Product Details](image/prod-desc.png)
 
 
-![Payment](images/pay-gateway.png)
+![Payment](image/pay-gateway.png)
 
 
 
